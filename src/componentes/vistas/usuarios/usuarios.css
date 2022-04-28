@@ -1,0 +1,84 @@
+body{
+    background-color: #e9ecf4;
+}
+.contenedor-usuarios{
+    display: grid;
+    grid-template-columns: minmax(min-content,500px) minmax(min-content,400px);
+    grid-template-rows: 1fr;
+    grid-template-areas: "perfil listado";
+    padding: 40px;
+    height: 100vh;
+    
+}
+
+.perfil{
+    grid-area: perfil;
+  
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-self: end;
+    align-items: center;
+    justify-content: center; 
+}
+
+.boton{
+    margin-top: 10px;
+}
+
+.boton > button{
+    width: 320px;
+    padding: 10px;
+    background-color:  #800;
+    font-size: larger;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.listado{
+    grid-area: listado;
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    align-items: center;
+    justify-content: start; 
+    text-align: center;
+}
+
+.icono{
+    margin-left: 10px;
+    color: #000;
+}
+
+.listado .titulo {
+text-align: end;
+}
+
+.lista{
+    display: flex;
+   flex-direction: row;
+   font-size: larger;
+   font-weight: 500; 
+   margin-top: 10px;
+}
+
+@media screen and (max-width:760px) {
+    .contenedor-usuarios{
+        
+        grid-template-areas: "perfil perfil"
+                            "listado listado";
+      
+    }
+
+    .perfil{
+        justify-self: center;
+    }
+
+    .listado{
+        justify-self: center;
+    }
+}

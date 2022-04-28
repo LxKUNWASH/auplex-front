@@ -1,0 +1,29 @@
+
+img{
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+}
+.card{
+width: 320px;
+height: 360px;
+background-color: #fff;
+opacity: 0.8;
+border-radius: 10px;
+position: relative;
+display: flex;
+cursor: pointer;
+justify-content: center;
+align-self: start;
+box-shadow: 0 0 20px rgba(0,0,0,0.13);
+}
+
+.content{
+    text-align: center;
+    position: absolute;
+    top: 260px;
+}
+
+.img{
+    margin-top: 20px;
+}

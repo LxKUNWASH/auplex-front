@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {Routes,Route} from 'react-router-dom'
+import Singin from "./componentes/vistas/singin/singin"
+import Login from "./componentes/vistas/login/login"
+import Usuarios from './componentes/vistas/usuarios/usuarios';
+import ActualizarUsuario from './componentes/vistas/actualizar-usuario/actualizarUsuario';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Routes>
+    <Route exact path="/" element={<Singin/>} />
+    <Route exact path="/login" element={<Login/>} />
+    <Route exact path="/usuarios" element={<Usuarios/>} />
+    <Route exact path="/usuarios-actualizar" element={<ActualizarUsuario/>} />
+    </Routes>
     </div>
   );
 }
