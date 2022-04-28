@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import "./usuarios.css";
-import Card from "../../card/card";
+import {Card} from "../../card/card";
 import {
   eliminarUsuario,
   obtenerUsuario,
-  obtenerUsuarios,
-  actualizarUsuario,
+  obtenerUsuarios
 } from "../../../helpers/peticiones/peticiones";
-import Input from "../../formulario/input";
-import {expresiones} from "../../../helpers/expresionesRegulares"
+
 
 function Usuarios() {
   const [admin, setAdmin] = useState([]);

@@ -7,8 +7,9 @@ body{
     box-sizing: border-box;
 }
 
-.contenedor{
-width: 100%;
+.fondo{
+width: 100vw;
+height: 100vh;
 padding: 15px;
 }
 
