@@ -16,7 +16,7 @@ body{
   
     display: flex;
     flex-direction: column;
-    align-self: start;
+    align-self: flex-start;
     justify-self: end;
     align-items: center;
     justify-content: center; 
@@ -45,7 +45,7 @@ body{
     flex-direction: column;
     justify-self: end;
     align-items: center;
-    justify-content: start; 
+    justify-content: flex-start; 
     text-align: center;
 }
 
